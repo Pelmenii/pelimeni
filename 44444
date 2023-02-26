@@ -1,0 +1,19 @@
+x = 301
+y = 5
+def setup(): 
+    size(800,800)
+def draw():
+     background(180)
+     global x,y
+     fill(042,102,0)
+ 
+     ellipse(400,400,500,700)
+     ellipse(250,650,100,100)
+     ellipse(550,650,100,100)
+     ellipse(400,100,200,200)
+     ellipse(150,x,80,201)
+     ellipse(650,x,80,201)
+     x = x + y
+     if x <= 300 or x >= 500:
+    
+         y = -y     
